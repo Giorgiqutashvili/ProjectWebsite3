@@ -12,37 +12,37 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  constructor(public service: ApiService, public renderer: Renderer2, public cookie: CookieService) {
+  constructor(
+    public service: ApiService,
+    public renderer: Renderer2,
+    public cookie: CookieService
+  ) {
     this.getAll(this.pageNumber);
-    this.isUser = this.cookie.check('user')
+    this.isUser = this.cookie.check('user');
   }
-
-  
 
   public allProducts: any;
   public productID: any;
-  public withoutImage: any = 'https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg';
+  public withoutImage: any =
+    'https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg';
   public cart: any;
-  public pageList: number [] = []
-  public pageNumber: any = 1
-  public productExists:any;
-  public isUser :any;
+  public pageList: number[] = [];
+  public pageNumber: any = 1;
+  public productExists: any;
+  public isUser: any;
 
-  
-  
-  getAll(page:any) {
-    this.pageNumber = page
-    this.pageList = []
+  getAll(page: any) {
+    this.pageNumber = page;
+    this.pageList = [];
     this.service.getAllProducts(this.pageNumber).subscribe({
       next: (data: any) => {
         this.allProducts = data.products;
-        let maxPage = Math.ceil(data.total / data.limit)
+        let maxPage = Math.ceil(data.total / data.limit);
 
         for (let i = 1; i <= maxPage; i++) {
-          this.pageList.push(i)
-          
+          this.pageList.push(i);
         }
-        console.log(this.pageList)
+        console.log(this.pageList);
       },
       error: (err: any) => {
         console.log('Connection Problem!', err);
@@ -52,25 +52,24 @@ export class HomeComponent {
 
   public isCartID: any;
 
-  sendToDetailsItemId(itemID:any){
-    this.service.sendItemId.next(itemID)
-    console.log(itemID)
+  sendToDetailsItemId(itemID: any) {
+    this.service.sendItemId.next(itemID);
+    console.log(itemID);
   }
-  
 
   filterThings(things: any) {
     this.allProducts = things;
-    console.log("Updated Products:", this.allProducts);
+    console.log('Updated Products:', this.allProducts);
   }
-  
+
   showPopup() {
     this.productExists = true;
-    this.renderer.addClass(document.body, 'popup-active'); 
+    this.renderer.addClass(document.body, 'popup-active');
   }
 
   hidePopup() {
     this.productExists = false;
-    this.renderer.removeClass(document.body, 'popup-active'); 
+    this.renderer.removeClass(document.body, 'popup-active');
   }
 
   public productAdded: boolean = false;
@@ -80,27 +79,27 @@ export class HomeComponent {
       id: item._id,
       quantity: 1,
     };
-  
+
     this.service.getUser().subscribe({
       next: (data: any) => {
         this.service.cartIDSender.next(data.cartID);
-        
+
         if (data.cartID) {
           this.service.getCart().subscribe({
             next: (cart: any) => {
               const existingProduct = cart.products.find(
                 (p: any) => p.productId === item._id
               );
-  
+
               if (existingProduct) {
                 this.productExists = true;
               } else {
                 this.productExists = false;
-                
+
                 this.service.patchCart(cartData).subscribe({
                   next: () => {
-                    this.productAdded = true; // Show the pop-up when added
-                    document.body.style.overflow = "hidden"; // Disable scrolling when pop-up is visible
+                    this.productAdded = true;
+                    document.body.style.overflow = 'hidden';
                   },
                   error: (err: any) => console.log(err),
                 });
@@ -111,8 +110,8 @@ export class HomeComponent {
         } else {
           this.service.createCart(cartData).subscribe({
             next: () => {
-              this.productAdded = true; // Show pop-up when a new cart is created
-              document.body.style.overflow = "hidden";
+              this.productAdded = true;
+              document.body.style.overflow = 'hidden';
             },
             error: (data: any) => console.log(data),
           });
@@ -121,11 +120,9 @@ export class HomeComponent {
       error: (err: any) => console.log(err),
     });
   }
-  
-  // Function to close the pop-up
+
   hideProductAddedPopup() {
     this.productAdded = false;
-    document.body.style.overflow = "auto"; // Re-enable scrolling when pop-up is closed
+    document.body.style.overflow = 'auto';
   }
-  
 }

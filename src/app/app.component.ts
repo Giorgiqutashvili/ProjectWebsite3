@@ -12,7 +12,7 @@ import { ApiService } from './api.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Angular10';
+  title = 'AngularProjectWebsite';
   constructor(public service: ApiService){
     this.loaderData()
   }
