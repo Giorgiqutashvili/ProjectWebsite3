@@ -1,0 +1,68 @@
+<div class="back-image">
+  <div class="motos">
+    <h1 class="h11">Innovate. Shop. Upgrade.</h1>
+    <h1 class="h22">The Future Delivered to Your Doorstep!</h1>
+  </div>
+</div>
+
+<div class="parent">
+  <section class="sec1">
+    <div class="card-area">
+      @for (item of allProducts; track $index) {
+      <div class="card">
+        <img
+          class="card-img"
+          [src]="!item.images[0] ? withoutImage : item.images[0]"
+          alt=""
+        />
+        <div class="card-body">
+          <h1>{{ item.brand }}</h1>
+          <h2>{{ item.price.current }} {{ item.price.currency }}</h2>
+          <div class="p-div">
+            <p>{{ item.description }}</p>
+          </div>
+          <h3>Rating: {{ item.rating }}</h3>
+          <h3>Stock: {{ item.stock }}</h3>
+          <button routerLink="/details" (click)="sendToDetailsItemId(item._id)" >View Details</button>
+          <button
+            class="add-to-cart-btn"
+            (click)="addToCart(item)"
+            [disabled]="item.stock == 0 || isUser == false ? true : false"
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>
+      }
+    </div>
+
+    @if (productExists) {
+    <div class="same-product-box show-popup">
+      <div class="popup-content">
+        <h1>The Product Is Already Added To Cart</h1>
+        <button class="close-btn" (click)="hidePopup()">Close</button>
+      </div>
+    </div>
+    } @if (productAdded) {
+    <div class="product-added-popup show-popup">
+      <div class="popup-content">
+        <h1>Product Successfully Added to Cart</h1>
+        <button class="close-btn" (click)="hideProductAddedPopup()">
+          Close
+        </button>
+      </div>
+    </div>
+    }
+
+    <app-categories
+      class="categories-area"
+      (sendAllThings)="filterThings($event)"
+    ></app-categories>
+  </section>
+</div>
+
+<div class="page-number-box">
+  @for (item of pageList; track $index) {
+  <button (click)="getAll(item)">{{ item }}</button>
+  }
+</div>

@@ -1,0 +1,47 @@
+<div class="parent">
+  <div class="card">
+    <div class="infos">
+      <img [src]="!item.images[0] ? withoutImage : item.images[0]" alt="" />
+      <div class="card-body">
+        <div class="div1">
+          <h1>{{ item.brand }}</h1>
+          <h2>{{ item.price.current }} {{ item.price.currency }}</h2>
+        </div>
+        <div class="div2">
+          <h3>Rating: {{ item.rating }}</h3>
+          <h3>Stock: {{ item.stock }}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-div">
+      <p>{{ item.description }}</p>
+      <button class="add-to-cart-btn">Add To Cart</button>
+      <button class="rate" (click)="openRatingModal()">Rate Product</button>
+    </div>
+  </div>
+</div>
+
+<div class="rating-modal" *ngIf="isRatingModalOpen">
+  <div class="modal-content">
+    <h2>Rate this Product</h2>
+    <div class="stars">
+      <button
+        *ngFor="let star of stars; let i = index"
+        [class.selected]="i < rating"
+        (click)="selectRating(i + 1)"
+      >
+        ★
+      </button>
+    </div>
+    <button (click)="submitRating()" class="submit-btn">Submit Rating</button>
+    <button (click)="closeRatingModal()" class="close-btn">Close</button>
+  </div>
+</div>
+
+<div class="confirmation-popup" *ngIf="isRatingSent">
+  <div class="confirmation-content">
+    <p>Your rating has been sent!</p>
+    <button (click)="closeConfirmation()">Close</button>
+  </div>
+</div>

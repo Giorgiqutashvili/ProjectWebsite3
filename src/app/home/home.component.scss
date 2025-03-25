@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Nabla&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sec1 {
+  width: 1440px;
+  max-width: 1440px;
+  height: fit-content !important;
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  gap: 15px;
+  padding: 15px;
+  grid-template-rows: 1fr !important;
+}
+
+.categories-area {
+  grid-row: 1;
+}
+
+app-categories {
+  border-radius: 25px;
+}
+
+.card-area {
+  grid-column: 2;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  width: 290px !important;
+  height: fit-content !important;
+  
+  background-color: rgb(137, 183, 214);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px;
+  padding-bottom: 35px;
+  h1 {
+    font-family: "Iceland", serif;
+    font-size: 300% !important;
+    
+  }
+  h2 {
+    font-family: "Audiowide", serif;
+    font-size: 130%;
+  }
+  p {
+    font-family: "Iceland", serif;
+    font-size: 120%;
+    color: black;
+  }
+  h3 {
+    font-family: "Share Tech Mono", serif;
+    font-size: 115%;
+    letter-spacing: 1px !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  button {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-family: "Audiowide", serif;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: rgb(116, 241, 241);
+  }
+}
+
+.p-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  justify-content: start;
+  align-items: start;
+}
+
+.card {
+  width: 290px;
+  height: 750px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: fit-content !important;
+}
+
+.card-img {
+  width: 290px;
+  height: 290px;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e3e7;
+  height: fit-content !important;
+  padding: 55px;
+}
+
+.back-image {
+  width: 100%;
+  height: 700px;
+  background-image: url("https://i.imgur.com/872rxN5.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.motos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h11 {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 199, 139);
+  font-family: "Audiowide";
+}
+.h22 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(80, 248, 150);
+  font-family: "Audiowide";
+  letter-spacing: 3px;
+}
+
+.same-product-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  .popup-content {
+    position: relative;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.2rem; 
+    font-family: 'Audiowide', sans-serif;
+  }
+
+  .close-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Iceland', sans-serif;
+    background: rgb(255, 158, 158);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: rgb(255, 104, 104);
+    }
+  }
+
+  &.show-popup {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+body.popup-active {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.product-added-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .popup-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Audiowide", sans-serif;
+    font-size: 130%;
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .close-btn {
+      background: rgb(255, 158, 158);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .close-btn:hover {
+      background: rgb(255, 104, 104);
+    }
+  }
+}
+
+.show-popup {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+.page-number-box{
+  width: 100%;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 5px;
+  padding: 15px !important;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #E2E3E7;
+  button {
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #E2E3E7;
+    border: none;
+    background-color: aquamarine;
+    font-family: "Audiowide";
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: rgb(79, 255, 196);
+  }
+  button:active {
+    background-color: rgb(0, 207, 121);
+  }
+}
+
+@media (max-width: 1100px) {
+    .parent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .sec1 {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .card-area{
+          width: 70%;
+        }
+        app-categories {
+          width: 70%;
+          margin: 10px !important;
+          margin-bottom: 15px;
+          border-radius: 15px !important;
+        }
+      }
+    }
+}

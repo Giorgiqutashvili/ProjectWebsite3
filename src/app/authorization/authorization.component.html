@@ -1,0 +1,76 @@
+<div class="auth-outer-area">
+  <div class="auth-cont">
+    @if (isLoggedIn) {
+    <div class="profile-cont">
+      <div class="prof-things">
+        <div class="welcome-box">
+          <h1>Welcome To Your Profile</h1>
+          <h1>{{ userName }}!</h1>
+        </div>
+        <div class="prof-info">
+          <p>UserName: {{ userName }}</p>
+          <p>LastName: {{ lastName }}</p>
+          <p>PhoneNumber: {{ number }}</p>
+        </div>
+        <button (click)="logOut()">Log out</button>
+      </div>
+    </div>
+    } @if (signInOn && !isLoggedIn) {
+
+    <div class="login-cont">
+      <h1>Log In</h1>
+      <form [formGroup]="signInInfo" (ngSubmit)="signInLogIn()">
+        <input type="email" placeholder="Email" formControlName="email" />
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+
+    } @if (signUpOn && !isLoggedIn) {
+    <div class="sign-up-cont">
+      <h1>Regsiter</h1>
+      <form [formGroup]="signUpInfo" (ngSubmit)="signUpAuth()">
+        <input
+          type="text"
+          placeholder="FirstName"
+          formControlName="firstName"
+        />
+        <input type="text" placeholder="LastName" formControlName="lastName" />
+        <input type="number" placeholder="Age" formControlName="age" />
+        <input type="email" placeholder="Email" formControlName="email" />
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <input type="text" placeholder="Address" formControlName="address" />
+        <input type="text" placeholder="PhoneNumber" formControlName="phone" />
+        <input type="text" placeholder="Zipcode" formControlName="zipcode" />
+        <input type="text" placeholder="Avatar" formControlName="avatar" />
+      </form>
+      <div class="select-div">
+        <select formControlName="gender">
+          <option value="MALE">Male</option>
+          <option value="FEMALE">Female</option>
+          <option value="OTHER">Other</option>
+        </select>
+        <button type="submit">Sign Up</button>
+      </div>
+    </div>
+    }
+
+    <div class="chooser">
+      @if (signUpOn && !isLoggedIn) {
+      <button class="in" (click)="signIn()">Sign In</button>
+
+      } @if (signInOn && !isLoggedIn) {
+
+      <button class="up" (click)="signUp()">Sign Up</button>
+      }
+    </div>
+  </div>
+</div>

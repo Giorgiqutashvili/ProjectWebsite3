@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="nav-area">
+    <h1 routerLink="/">Angular</h1>
+    <ul *ngIf="!isMobile">
+      <li routerLink="/" (click)="closeMenu()">Home</li>
+      <li routerLink="/cart" (click)="closeMenu()">Cart</li>
+    </ul>
+    <button *ngIf="!isMobile" routerLink="/auth">Authorization</button>
+    <div class="burger-menu" *ngIf="isMobile" (click)="toggleMenu()">☰</div>
+  </div>
+  <div class="sidebar" [class.open]="isMenuOpen">
+    <div class="sidebar-header">
+      <h1 routerLink="/" (click)="closeMenu()">Angular</h1>
+      <div class="close-menu" (click)="toggleMenu()">×</div>
+    </div>
+    <ul>
+      <li routerLink="/" (click)="closeMenu()">Home</li>
+      <li routerLink="/cart" (click)="closeMenu()">Cart</li>
+    </ul>
+    <button routerLink="/auth" *ngIf="isTokenChecker"  (click)="closeMenu()">Profile</button>
+    <button routerLink="/auth" *ngIf="!isTokenChecker"  (click)="closeMenu()">Authorization</button>
+  </div>
+  <div class="overlay" *ngIf="isMenuOpen" (click)="toggleMenu()"></div>
+</nav>

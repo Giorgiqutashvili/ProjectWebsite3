@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Nabla&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 35px;
+  padding-top: 50px;
+  background-color: #89B7D6;
+  flex-wrap: wrap;
+}
+.parent div {
+  margin: 25px;
+}
+.parent .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.parent .contacts h1 {
+  border-bottom: 2px solid lightblue;
+  font-family: "Audiowide";
+  color: rgb(37, 37, 37);
+  text-align: center;
+}
+.parent .contacts p {
+  font-family: "Audiowide";
+  font-size: 120%;
+  margin: 5px;
+}
+.parent .contacts i {
+  margin: 5px !important;
+  cursor: pointer;
+}
+.parent .contacts i span {
+  margin: 5px;
+}
+.parent .navigate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.parent .navigate h1 {
+  border-bottom: 2px solid lightblue;
+  font-family: "Audiowide";
+  color: rgb(37, 37, 37);
+  text-align: center;
+}
+.parent .navigate ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.parent .navigate li {
+  font-family: "Audiowide";
+  list-style: none;
+  cursor: default;
+  transition: 0.5s;
+  font-size: 130%;
+}
+.parent .navigate li:hover {
+  color: rgb(0, 192, 128);
+}
+.parent .navigate li:active {
+  color: aqua;
+}
+
+@media (max-width: 665px) {
+  .parent div {
+    align-items: center;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

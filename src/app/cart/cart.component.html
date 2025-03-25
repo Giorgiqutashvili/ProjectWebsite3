@@ -1,0 +1,65 @@
+<div class="parent">
+
+  <div class="empty-cart-container" *ngIf="cartProducts.length == 0">
+    <img
+      src="https://training.solix.com/wp-content/themes/vantage/images/empty-cart.png"
+      alt="Empty Cart"
+      class="empty-cart-img"
+    />
+  </div>
+
+  <section class="sec1"  *ngIf="cartProducts.length > 0" >
+    <div class="card-area">
+      @for (item of cartProducts; track $index) {
+      <div class="card">
+        <img
+          class="card-img"
+          [src]="!item.images[0] ? withoutImage : item.images[0]"
+          alt=""
+        />
+        <div class="card-body">
+          <div class="info-body">
+            <h2>{{ item.title }}</h2>
+            <h3>{{ item.price.current }} {{ item.price.currency }}</h3>
+            <h4>Rating: {{ item.rating }}</h4>
+          </div>
+          <div class="product-info">
+            <div class="btn-cont">
+              <button
+                class="minus"
+                (click)="changeQuantity(item._id, item.quantity - 1, $event)"
+              >
+                -
+              </button>
+              <p>{{ item.quantity }}</p>
+              <button
+                class="plus"
+                (click)="changeQuantity(item._id, item.quantity + 1, $event)"
+              >
+                +
+              </button>
+            </div>
+            <button  class="del-btn" (click)="deleteProduct(item._id)">Delete</button>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="product-price">
+      <div class="price-box">
+        <h1>Total Price:</h1>
+        <h1>{{ totalPrice }}</h1>
+        <button (click)="checkout()">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="checkout-popup" *ngIf="checkoutSuccess">
+    <div class="popup-content">
+      <h1>Successful Checkout!</h1>
+      <button class="close-btn" (click)="closePopup()">Close</button>
+    </div>
+  </div>
+  
+</div>

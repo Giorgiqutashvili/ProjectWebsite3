@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Nabla&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+.parent {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.imgur.com/872rxN5.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.parent .card {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 70%;
+  max-width: 900px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 20px;
+}
+.parent .card .infos {
+  display: flex;
+  flex-direction: column;
+}
+.parent .card .p-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 400px;
+  padding: 10px;
+  font-family: "Audiowide";
+  font-size: 140% !important;
+  color: rgb(0, 221, 166);
+  gap: 10px;
+}
+.parent .card img {
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 1/1;
+  border-radius: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.parent .card .card-body {
+  display: flex;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Audiowide";
+  justify-content: space-around;
+  align-items: center;
+}
+.parent .card .card-body .div1 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  font-family: "Audiowide";
+  font-size: 140% !important;
+  color: rgb(0, 221, 166);
+}
+.parent .card .card-body .div2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  font-family: "Audiowide";
+  font-size: 140% !important;
+  color: rgb(0, 221, 166);
+}
+
+.add-to-cart-btn {
+  border-radius: 35px;
+  border: none;
+  height: 50px;
+  width: 170px;
+  border: 1.5px solid aqua;
+  transition: 1s;
+}
+
+.rate {
+  border-radius: 35px;
+  border: none;
+  height: 75px;
+  width: 170px;
+  border: 1.5px solid aqua;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: aqua;
+  transition: 0.5s;
+}
+
+button:active {
+  background-color: rgb(0, 165, 165);
+}
+
+.rating-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-family: "Audiowide";
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  font-family: "Audiowide";
+}
+
+.stars button {
+  font-size: 30px;
+  color: gray;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.stars button.selected {
+  color: rgb(0, 255, 221);
+}
+
+.submit-btn {
+  background-color: #55fcca;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.close-btn {
+  background-color: rgb(119, 255, 232);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 999;
+  border-radius: 15px;
+}
+
+.confirmation-popup button {
+  background-color: aqua;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=details.component.css.map */

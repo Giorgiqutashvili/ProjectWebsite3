@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Nabla&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.auth-outer-area {
+  display: flex;
+  width: 100%;
+  height: 1050px;
+  background-color: gray;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  background-image: url("https://i.imgur.com/872rxN5.png");
+}
+.auth-outer-area .auth-cont {
+  display: flex;
+  max-width: 70%;
+  width: 70%;
+  height: 800px;
+  position: absolute;
+  top: 35px;
+  border-radius: 30px;
+  background-color: rgb(25, 25, 26);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 35px;
+  margin-top: 100px;
+  max-height: 1000px !important;
+}
+.auth-outer-area .auth-cont .login-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  gap: 20px;
+}
+.auth-outer-area .auth-cont .login-cont h1 {
+  font-family: "Audiowide";
+  color: rgb(42, 179, 224);
+}
+.auth-outer-area .auth-cont .login-cont form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.auth-outer-area .auth-cont .login-cont form input {
+  width: 220px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 120%;
+  font-family: "Audiowide";
+  color: rgb(42, 179, 224);
+}
+.auth-outer-area .auth-cont .sign-up-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
+.auth-outer-area .auth-cont .sign-up-cont h1 {
+  font-family: "Audiowide";
+  color: rgb(42, 179, 224);
+}
+.auth-outer-area .auth-cont .sign-up-cont form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.auth-outer-area .auth-cont .sign-up-cont form input {
+  width: 220px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 120%;
+  font-family: "Audiowide";
+  color: rgb(42, 179, 224);
+}
+.auth-outer-area .auth-cont .sign-up-cont .select-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.auth-outer-area .auth-cont .sign-up-cont .select-div select {
+  border-radius: 15px;
+}
+.auth-outer-area .auth-cont button:hover {
+  background-color: aqua !important;
+}
+.auth-outer-area .auth-cont button {
+  border: none;
+  width: 100px;
+  height: 55px;
+  border-radius: 25px;
+  font-family: "Audiowide";
+  transition: 1s;
+}
+.auth-outer-area .auth-cont .profile-cont {
+  background-color: rgb(77, 134, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  border-radius: 35px;
+  padding: 20px;
+  gap: 30px;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things button {
+  background-color: white;
+  font-family: "Audiowide";
+  cursor: pointer;
+  border-radius: 15px;
+  width: 95px;
+  border: none;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things button :hover {
+  background-color: rgb(0, 166, 221) !important;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things .prof-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things .prof-info p {
+  font-size: 130%;
+  font-family: "Audiowide";
+  color: rgb(151, 214, 235);
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things .welcome-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.auth-outer-area .auth-cont .profile-cont .prof-things .welcome-box h1 {
+  font-family: "Nabla", serif;
+  font-size: 230%;
+}
+.auth-outer-area .auth-cont .btn1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.auth-outer-area .auth-cont form {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.chooser {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+}
+.chooser :hover {
+  background-color: aqua !important;
+}
+.chooser :active {
+  background-color: aquamarine;
+}
+.chooser button {
+  border: none;
+  width: 100px;
+  height: 55px;
+  border-radius: 25px;
+  font-family: "Audiowide";
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  .auth-cont {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .auth-cont .sign-up-cont h1 {
+    margin: 10px;
+  }
+  .auth-cont .sign-up-cont .select-div {
+    gap: 15px;
+    margin: 10px;
+  }
+  .auth-cont .sign-up-cont form {
+    gap: 15px;
+  }
+  .auth-cont .sign-up-cont form input {
+    width: 100px;
+    height: 35px;
+  }
+}/*# sourceMappingURL=authorization.component.css.map */

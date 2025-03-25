@@ -1,0 +1,85 @@
+<div class="sidebar">
+  <div class="brand-box">
+    @for (item of brands; track $index) {
+    <button class="brand-btn" (click)="filterByBrand(item)" [class.active]="activeBrand === item">
+      {{ item }}
+    </button>
+    }
+  </div>
+
+  <input
+    class="searcher"
+    placeholder="search"
+    [(ngModel)]="search"
+    (keyup.enter)="filterBySearch()"
+  />
+  <div class="filtering">
+    <div class="sort-box">
+      <h1 class="sorting">Sort</h1>
+      <select
+        class="sort-bys"
+        [(ngModel)]="filters.sort_by"
+        (change)="updateSorting(filters.sort_by)"
+      >
+        <option value=""></option>
+        <option value="rating">Sort by Rating</option>
+        <option value="price">Sort by Price</option>
+      </select>
+
+      <div class="category-box">
+        <button
+          (click)="categoryFiltering('1')"
+          [class.active]="activeCategory === '1'"
+        >
+          Laptops
+        </button>
+        <button
+          (click)="categoryFiltering('2')"
+          [class.active]="activeCategory === '2'"
+        >
+          Smartphones
+        </button>
+      </div>
+
+      <div class="asc-desc">
+        <button  class="asc-btn"
+          (click)="updateSortingDirection('asc')"
+          [class.active]="activeSortDirection === 'asc'"
+        >
+          Ascending
+        </button>
+        <button
+          class="desc-btn"
+          (click)="updateSortingDirection('desc')"
+          [class.active]="activeSortDirection === 'desc'"
+        >
+          Descending
+        </button>
+      </div>
+    </div>
+
+    <div class="price-box">
+      <label for="priceRange">Price Range: {{ maxPrice }}</label>
+      <input
+      class="range-price"
+        id="priceRange"
+        type="range"
+        [(ngModel)]="maxPrice"
+        min="100"
+        max="10000"
+        step="50"
+        (change)="priceFiltering()"
+      />
+      <h1>Search By Rating</h1>
+      <select class="rate-sel" [(ngModel)]="filters.rating">
+        <option value=""></option>
+        <option value="4">4 & Up</option>
+        <option value="3">3 & Up</option>
+        <option value="2">2 & Up</option>
+      </select>
+    </div>
+    
+  </div>
+  <button class="reset" (click)="reset()">All</button>
+  <button class="filter" (click)="filterWithButton()">Filter</button>
+</div>

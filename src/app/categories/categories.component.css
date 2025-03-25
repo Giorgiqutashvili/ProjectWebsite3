@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barriecito&family=Boldonse&family=Bree+Serif&family=Fascinate+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Barriecito&family=Bokor&family=Boldonse&family=Bowlby+One+SC&family=Bree+Serif&family=Eagle+Lake&family=Fascinate+Inline&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Limelight&family=Monoton&family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Stalinist+One&family=Tilt+Prism&display=swap");
+.sidebar {
+  background-color: #f2f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .brand-name {
+  width: 100%;
+  font-family: "Tilt Prism", serif;
+  font-size: 300%;
+  font-weight: 900;
+  color: lightblue !important;
+}
+.sidebar .brand-btn:hover {
+  background-color: #70ece6;
+  transition: 0.5s;
+}
+.sidebar button {
+  border: none;
+  border-top: 1.1px solid lightblue;
+  border-bottom: 1.1px solid lightblue;
+  width: 100% !important;
+  height: 50px;
+  font-size: 60%;
+  color: rgb(0, 0, 0) !important;
+  transition: 0.5s;
+}
+
+.searcher {
+  width: 90%;
+  height: 55px;
+  border-radius: 15px;
+  border: 2px solid lightblue;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.filtering {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sort-box .asc-desc {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.sort-box .asc-desc button {
+  border: 2px solid lightblue;
+  border-radius: 15px;
+  width: 70% !important;
+  font-size: 120%;
+  font-family: "Audiowide";
+}
+.sort-box .category-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.sort-box .category-box button {
+  border: 2px solid lightblue;
+  border-radius: 15px;
+  width: 70% !important;
+  font-size: 120%;
+  font-family: "Audiowide";
+}
+
+.sorting {
+  color: #4393ad !important;
+  font-size: 130%;
+  font-family: "Audiowide";
+}
+
+.sort-bys {
+  display: flex;
+  width: 70%;
+  border: 1.9px solid lightblue !important;
+  border-radius: 35px;
+  height: 35px;
+}
+
+.price-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  width: 90%;
+}
+.price-box input {
+  width: 70%;
+  border-radius: 30px;
+  height: 30px;
+  border: 1px solid lightblue;
+}
+.price-box h1 {
+  color: #4393ad;
+  font-size: 130%;
+  font-family: "Audiowide";
+}
+.price-box .rate-sel {
+  border-radius: 10px;
+  width: 70%;
+  height: 30px;
+}
+
+.sort-box {
+  display: flex;
+}
+
+.reset {
+  width: 70% !important;
+  font-size: 150% !important;
+  border: 1.9px solid lightblue !important;
+}
+
+.reset:hover {
+  background-color: #70ece6 !important;
+  transform: 0.5s !important;
+}
+
+.filter {
+  width: 70%;
+  font-size: 150% !important;
+  border: 1.9px solid lightblue !important;
+  font-family: "Audiowide";
+}
+
+.filter:hover {
+  background-color: #70ece6 !important;
+  transform: 0.5s !important;
+}
+
+button {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button.active {
+  background-color: #00fff2;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 160, 209, 0.5);
+}
+
+button.reset,
+button.filter {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease-in-out;
+  font-family: "Audiowide";
+}
+
+button.reset:hover,
+button.filter:hover {
+  background-color: #d6d6d6;
+}
+
+.brand-box {
+  width: 100% !important;
+  border-radius: 15px;
+}
+
+.brand-btn {
+  width: 100% !important;
+  font-size: 135% !important;
+  font-family: "Audiowide", serif;
+}
+
+.sorting {
+  color: rgb(42, 185, 233);
+}
+
+.filter:hover {
+  background-color: rgb(0, 191, 255);
+}
+
+.reset:hover {
+  background-color: rgb(0, 191, 255);
+}
+
+label {
+  font-family: "Audiowide";
+}
+
+.range-price {
+  color: #70ece6 !important;
+  background-color: #70ece6 !important;
+}/*# sourceMappingURL=categories.component.css.map */
